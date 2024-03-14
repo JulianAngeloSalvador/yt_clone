@@ -16,6 +16,6 @@
   html,
   body,
   #root {
-    @apply min-h-dvh w-full;
+    @apply min-h-dvh w-full bg-primary text-secondary text-main-fs;
   }
 }
