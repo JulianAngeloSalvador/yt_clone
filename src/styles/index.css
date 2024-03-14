@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .guide1 {
+    @apply outline outline-1 outline-teal-800;
+  }
+
+  .guide2 {
+    @apply outline outline-1 outline-red-800;
+  }
+}
