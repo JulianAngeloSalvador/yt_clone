@@ -11,3 +11,11 @@
     @apply outline outline-1 outline-red-800;
   }
 }
+
+@layer base {
+  html,
+  body,
+  #root {
+    @apply min-h-dvh w-full;
+  }
+}
