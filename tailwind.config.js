@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 
+const defaultTheme = require("tailwindcss/defaultTheme");
 const { createThemes } = require("tw-colors");
 const plugin = require("tailwindcss/plugin");
 export default {
@@ -14,11 +15,21 @@ export default {
       caption: "clamp(0.875rem, 1.25vw + .5rem, 1rem)",
       sm: "clamp(0.775rem, 1.15vw + .25rem, .925rem)",
     },
+    fontWeight: {
+      light: "300",
+      DEFAULT: "400",
+      semibold: "500",
+      bold: "700",
+      "extra-bold": "900",
+    },
     extend: {
       width: {
         "fluid-250": "min(250px, 100%)",
         "fluid-300": "min(300px, 100%)",
         "fluid-400": "min(400px, 100%)",
+      },
+      fontFamily: {
+        roboto: ["Roboto", ...defaultTheme.fontFamily.sans],
       },
     },
   },
